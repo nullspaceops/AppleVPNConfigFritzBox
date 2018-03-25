@@ -4,83 +4,83 @@
 <dict>
 	<key>PayloadContent</key>
 	<array>
-		<dict>
-			<key>IPSec</key>
+	<dict>
+		<key>IPSec</key>
 		<dict>
 			<key>AuthenticationMethod</key>
 			<string>SharedSecret</string>
 			<!-- VPN-On-Demand Codeblock START -->
-    	<key>OnDemandEnabled</key>
-    	<integer>1</integer>
-    	<key>OnDemandRules</key>
-    	<array>
+    			<key>OnDemandEnabled</key>
+    			<integer>1</integer>
+    			<key>OnDemandRules</key>
+    			<array>
 	   		<!-- Enable VPN in all WIFI-Networks-->
-	     	<dict>
-	       <key>InterfaceTypeMatch</key>
-	       <string>WiFi</string>
-	       <key>Action</key>
-	       <string>Connect</string>
-	     	</dict>
-				<!-- Turn off VPNONDEMAND if on matching WiFi network -->
-				<dict>
-					<key>InterfaceTypeMatch</key>
-					<string>WiFi</string>
-					<key>SSIDMatch</key>
-					<array>
-					<string>SOME-SSID</string>
-					</array>
-					<key>Action</key>
-					<string>Disconnect</string>
+	     		<dict>
+	      			<key>InterfaceTypeMatch</key>
+	     			<string>WiFi</string>
+	       			<key>Action</key>
+	       			<string>Connect</string>
+	     		</dict>
+			<!-- Turn off VPNONDEMAND if on matching WiFi network -->
+			<dict>
+				<key>InterfaceTypeMatch</key>
+				<string>WiFi</string>
+				<key>SSIDMatch</key>
+				<array>
+				<string>SOME-SSID</string>
+				</array>
+				<key>Action</key>
+				<string>Disconnect</string>
 				</dict>
 				<!-- VPN Default state -->
 				<dict>
  				 <key>Action</key>
  				 <string>Connect</string>
-				</dict>
-	    </array>
-			<!-- VPN-On-Demand Codeblock END -->
-			<key>LocalIdentifier</key>
-			<string>SOME-USERNAME</string>
-			<key>LocalIdentifierType</key>
-			<string>KeyID</string>
-			<key>RemoteAddress</key>
-			<string>REMOTEADRESS</string>
-			<key>SharedSecret</key>
-			<string>SOME-SECRET</string>
+			</dict>
+	   		</array>
+		<!-- VPN-On-Demand Codeblock END -->
+		<key>LocalIdentifier</key>
+		<string>SOME-USERNAME</string>
+		<key>LocalIdentifierType</key>
+		<string>KeyID</string>
+		<key>RemoteAddress</key>
+		<string>REMOTEADRESS</string>
+		<key>SharedSecret</key>
+		<string>SOME-SECRET</string>
 		</dict>
-			<key>PayloadDescription</key>
-			<string>Configures VPN settings, including authentication.</string>
-			<key>PayloadDisplayName</key>
-			<string>SOME-DISPLAY</string>
-			<key>PayloadIdentifier</key>
-			<string>SOME-REMOTE</string>
-			<key>PayloadOrganization</key>
-			<string>Sometown</string>
-			<key>PayloadType</key>
-			<string>com.apple.vpn.managed</string>
-			<key>PayloadUUID</key>
-			<string>SOME-SECRET</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>UserDefinedName</key>
-			<string>SOME-TOWN</string>
-			<key>VPNType</key>
-			<string>IPSec</string>
-		</dict>
-	</array>
 	<key>PayloadDescription</key>
-	<string>SOME DESCRIPTION</string>
+	<string>Configures VPN settings, including authentication.</string>
 	<key>PayloadDisplayName</key>
-	<string>SOME-TOWN</string>
+	<string>SOME-DISPLAY</string>
 	<key>PayloadIdentifier</key>
 	<string>SOME-REMOTE</string>
 	<key>PayloadOrganization</key>
-	<string>nullspaceops</string>
+	<string>Sometown</string>
 	<key>PayloadType</key>
-	<string>Configuration</string>
+	<string>com.apple.vpn.managed</string>
 	<key>PayloadUUID</key>
-	<string>SOME-REMOTE</string>
+	<string>SOME-SECRET</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
+	<key>UserDefinedName</key>
+	<string>SOME-NAME</string>
+	<key>VPNType</key>
+	<string>IPSec</string>
+	</dict>
+	</array>
+<key>PayloadDescription</key>
+<string>SOME DESCRIPTION</string>
+<key>PayloadDisplayName</key>
+<string>SOME-NAME</string>
+<key>PayloadIdentifier</key>
+<string>SOME-REMOTE</string>
+<key>PayloadOrganization</key>
+<string>nullspaceops</string>
+<key>PayloadType</key>
+<string>Configuration</string>
+<key>PayloadUUID</key>
+<string>SOME-REMOTE</string>
+<key>PayloadVersion</key>
+<integer>1</integer>
 </dict>
 </plist>
